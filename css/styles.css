@@ -84,7 +84,9 @@ fieldset {
   top: 0;
   z-index: 999;
   pointer-events: none;
-  padding: 24px 16px 40px 16px;
+  padding: 72px 16px 40px 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hamburger.open {
@@ -119,15 +121,11 @@ fieldset {
   color: #4d5ae5;
 }
 
-.menu {
-  margin-top: 72px;
-  margin-bottom: 168px;
-}
-
 .list-link {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: auto;
 }
 
 .link {
@@ -140,7 +138,6 @@ fieldset {
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  padding: 0;
 }
 
 .link:focus,
@@ -259,8 +256,9 @@ fieldset {
 
 .title-description {
   font-size: 36px;
-  color: #2e2f42;
   font-weight: 700;
+  color: #2e2f42;
+
   line-height: 1.1;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
@@ -307,13 +305,10 @@ fieldset {
   padding: 32px 0;
 }
 
-.title-description {
-  font-size: 20px;
-  color: #2e2f42;
+.team-card .title-description {
   font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 
 .team-card .paragraph {
@@ -377,6 +372,12 @@ fieldset {
 .project-card .current {
   position: relative;
   overflow: hidden;
+}
+
+.project-card .title-description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .paragraph.overlay {
@@ -464,7 +465,7 @@ fieldset {
 
 .subscribe .paragraph {
   color: #fff;
-  align-self: center;
+  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -745,12 +746,6 @@ input[placeholder="E-mail"] {
     align-items: center;
   }
 
-  .menu {
-    display: flex;
-    align-items: baseline;
-    margin: 24px 122px 24px 0;
-  }
-
   .logo {
     margin-right: 120px;
   }
@@ -760,8 +755,8 @@ input[placeholder="E-mail"] {
     background-color: transparent;
     position: static;
     padding: 0;
-    display: flex;
     align-items: center;
+    flex-direction: row;
     min-height: 0;
   }
 
@@ -782,12 +777,14 @@ input[placeholder="E-mail"] {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    margin-right: 122px;
   }
 
   .link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    padding: 24px 0;
   }
 
   .contacts-menu {
@@ -916,6 +913,10 @@ input[placeholder="E-mail"] {
     width: 264px;
   }
 
+  .subscribe .paragraph {
+    text-align: left;
+  }
+
   .modal {
     width: 408px;
     min-height: 584px;
@@ -933,7 +934,7 @@ input[placeholder="E-mail"] {
     padding: 0 15px;
   }
 
-  .menu {
+  .list-link {
     margin-right: 332px;
   }
 
@@ -963,7 +964,7 @@ input[placeholder="E-mail"] {
     margin: 0 auto 48px;
   }
   .section {
-    padding: 120px 0;
+    padding: 188px 0;
   }
 
   .strategies-list-item {
@@ -1026,7 +1027,7 @@ input[placeholder="E-mail"] {
   }
 
   .social-media {
-    margin-right: 80px;
+    margin-right: auto;
   }
 
   .social-media .person-links-list {
